@@ -41,6 +41,12 @@ a {
   header .logo img {
     width: 70px;
   }
+  header #menu {
+    display: none;
+  }
+  header #xmark {
+    display: none;
+  }
   header .mainMenu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -51,11 +57,14 @@ a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 60%;
+    position: relative;
   }
   header .mainMenu a {
     font-weight: bold;
     width: 25%;
     text-align: center;
+    text-decoration: none;
+    color: #333333;
   }
   header .mainMenu a:hover {
     color: #ffbc0d;
@@ -86,7 +95,43 @@ a {
   }
   .searchWrap .searchBox {
     margin: 0 auto;
+    width: 580px;
+    height: 100px;
     margin-top: 200px;
+  }
+  .searchWrap .searchBox input {
+    width: 400px;
+    height: 50px;
+    border-radius: 30px;
+  }
+  .searchWrap .searchBox input::-webkit-input-placeholder {
+    text-indent: 30px;
+  }
+  .searchWrap .searchBox input:-ms-input-placeholder {
+    text-indent: 30px;
+  }
+  .searchWrap .searchBox input::-ms-input-placeholder {
+    text-indent: 30px;
+  }
+  .searchWrap .searchBox input::placeholder {
+    text-indent: 30px;
+  }
+  .searchWrap .searchBox .btnSearch {
+    border-radius: 30px;
+    height: 50px;
+    width: 100px;
+    background: #ffbc0d;
+    cursor: pointer;
+    border: none;
+  }
+  .searchWrap .searchBox .btn {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #ffbc0d;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
   }
   .searchWrap.active {
     display: block;
@@ -147,10 +192,14 @@ a {
   .imgSlideWrap .imgSlide a img {
     height: 300px;
   }
+  .MliveBox {
+    display: none;
+  }
   .liveBox {
     width: 800px;
     height: 100px;
     margin: 0 auto;
+    display: block;
   }
   .liveBox h4 {
     margin: 10px 0;
@@ -158,6 +207,10 @@ a {
   .liveBox .liveBox01 {
     width: 800px;
     margin: 0 auto;
+  }
+  .liveBox .liveBox01 a {
+    text-decoration: none;
+    color: #333333;
   }
   .liveBox .liveBox01 .liveWrap01 {
     display: -webkit-box;

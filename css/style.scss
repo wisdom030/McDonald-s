@@ -30,15 +30,24 @@ a {
         width: 70px;
       }
     }
+    #menu {
+      display: none;
+    }
+    #xmark {
+      display: none;
+    }
     .mainMenu {
       display: flex;
       align-items: center;
       justify-content: space-around;
       width: 60%;
+      position: relative;
       a {
         font-weight: bold;
         width: 25%;
         text-align: center;
+        text-decoration: none;
+        color: #333333;
       }
       a:hover {
         color: rgb(265, 188, 13);
@@ -65,7 +74,34 @@ a {
     background: rgba(0, 0, 0, 0.5);
     .searchBox {
       margin: 0 auto;
+      width: 580px;
+      height: 100px;
       margin-top: 200px;
+      input {
+        width: 400px;
+        height: 50px;
+        border-radius: 30px;
+      }
+      input::placeholder {
+        text-indent: 30px;
+      }
+      .btnSearch {
+        border-radius: 30px;
+        height: 50px;
+        width: 100px;
+        background: rgb(265, 188, 13);
+        cursor: pointer;
+        border: none;
+      }
+      .btn {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background: rgb(265, 188, 13);
+        border: none;
+        margin: 0 auto;
+        cursor: pointer;
+      }
     }
   }
   .searchWrap.active {
@@ -120,16 +156,24 @@ a {
       }
     }
   }
+  .MliveBox {
+    display: none;
+  }
   .liveBox {
     width: 800px;
     height: 100px;
     margin: 0 auto;
+    display: block;
     h4 {
       margin: 10px 0;
     }
     .liveBox01 {
       width: 800px;
       margin: 0 auto;
+      a {
+        text-decoration: none;
+        color: #333333;
+      }
       .liveWrap01 {
         display: flex;
         justify-content: space-between;

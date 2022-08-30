@@ -1,10 +1,6 @@
 $(document).ready(function() {
-  $(".subMenu").hide();
-  $("nav").mouseover(function() {
-    $(".subMenu").stop().slideDown(300);
-  }).mouseout(function() {
-    $(".subMenu").stop().slideUp(300);
-  });
+
+  alert("포트폴리오용입니다.");
 
   $(".search").click(function() {
     $(".searchWrap").addClass("active");
@@ -30,7 +26,7 @@ $(document).ready(function() {
 });
 
 $(window).resize(function(){ 
-  if (window.innerWidth > 1024) {  
+  if ( window.innerWidth > 1024) {  
 
     $(".plus").click(function() {
       $(".plus").hide();
@@ -45,7 +41,15 @@ $(window).resize(function(){
       $(".liveBox02").show();
       $("footer").offset({top:"2000"});
     });
-  
+    
   }
   
   }).resize();
+
+
+      $(".subMenu").hide();
+      $("nav").mouseover(function() {
+        $(".subMenu").stop().slideDown(300);
+      }).mouseout(function() {
+        $(".subMenu").stop().slideUp(300);
+      });
